@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "SourceSansPro-Regular";
+  src: url("/public/fonts/SourceSansPro-Regular.ttf") format("truetype");
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+.title {
+  font-size: 45px;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  margin: 0 5%;
+}
+
+.item .item-column {
+  display: flex;
+  margin: 1vh;
+  background-color: #a1a1a1d7;
+  width: auto;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.1);
+}
+
+.item-column .title-column {
+  background-color: white;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.15);
+}
+
+.item .item-column-button {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+}
+
+.button-add-column {
+  cursor: pointer;
+  padding: 0.5rem;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: auto;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.15);
+}
+
+.button-add-column:active {
+  background-color: #d8d8d8;
+}
+
+.item-column .data {
+  margin: auto;
+  border-radius: 0.25rem;
+  text-align: center;
+  width: 90%;
+  height: 100%;
+}
+
+.item-column .button-add-card {
+  cursor: pointer;
+  background-color: white;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.button-add-card:active {
+  background-color: #d8d8d8;
+}
+
+.card-box {
+  padding: 1rem;
+  margin: 0.5rem 0;
+  background-color: #d9ec2b;
+  border-radius: 1rem;
+  cursor: move;
+  overflow: hidden;
+  width: auto;
+  height: auto;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0.5vh rgba(0, 0, 0, 0.15);
+  
+}
+
+.card-box .content {
+  white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 100%;
+    text-align: justify;
+}

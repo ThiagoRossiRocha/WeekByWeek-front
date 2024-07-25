@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("/public/fonts/SourceSansPro-Regular.ttf") format("truetype");
+}
+
+body {
+  font-family: "SourceSansPro-Regular";
+  font-size: 18px;
+  background-color: #fdf7e8;
+}
